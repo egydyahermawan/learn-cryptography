@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 </script>
 
-<div class="position-fixed w-100 bg-dark">
+<div class="position-fixed w-100 bg-dark" style="z-index: 999;">
 	<div class="container">
 		<header class="d-flex flex-wrap justify-content-center py-3">
 			<a

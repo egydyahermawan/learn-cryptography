@@ -100,7 +100,7 @@
                 message: [
                     'Tenang, saya akan coba gambarkan sedikit ya.',
                     `
-                        <table class="table table-bordered mb-0">
+                        <table class="table table-bordered mb-0 table-responsive">
                             <tbody>
                                 <tr>
                                     <td>Plaintext</td>
@@ -120,7 +120,7 @@
                     'Setelah mengetahui urutan dari masing-masing karakter, yang perlu kita lakukan yaitu menjumlahkan urutan dari masing-masing karakter dengan kunci yang telah ditentukan sebelumnya!',
                     'Lihat tabel berikut, saya akan jumlahkan setiap nilai urutan karakter dengan kunci yang kita miliki!',
                     `
-                        <table class="table table-bordered mb-0">
+                        <table class="table table-bordered mb-0 table-responsive">
                             <tbody>
                                 <tr>
                                     <td>Penjumlahan</td>
@@ -139,7 +139,7 @@
                     `,
                     'Untuk memastikan hasil penjumlahan tidak melebihi 25, maka kita dapat melakukan mod 26!',
                     `
-                        <table class="table table-bordered mb-0">
+                        <table class="table table-bordered mb-0 table-responsive">
                             <tbody>
                                 <tr>
                                     <td>Mod 26</td>
@@ -161,7 +161,7 @@
                 message: [
                     'Tentu saja, akan saya coba!',
                     `
-                        <table class="table table-bordered mb-0">
+                        <table class="table table-bordered mb-0 table-responsive">
                             <tbody>
                                 <tr>
                                     <td>Urutan</td>
@@ -202,7 +202,7 @@
                 message: [
                     `${activeNarator.nickname}, kamu nantangin saya? Siapa takut!`,
                     `
-                        <table class="table table-bordered mb-0">
+                        <table class="table table-bordered mb-0 table-responsive">
                             <tbody>
                                 <tr>
                                     <td>Ciphertext</td>
@@ -282,8 +282,7 @@
 
         let imageProfile = document.createElement('img')
         imageProfile.src = scenario.person
-        imageProfile.className = 'border border-2 rounded-circle'
-        imageProfile.width = 60
+        imageProfile.className = 'border border-2 rounded-circle avatar'
         imageProfile.alt = 'person'
         
         let chats = document.createElement('div')

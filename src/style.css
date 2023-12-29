@@ -50,10 +50,11 @@
     background-color: #212529;
     padding: 10px 14px;
     border-radius: 12px;
-    max-width: 60%;
+    max-width: 75%;
     width: fit-content;
     opacity: 0; 
     animation: slideFade 1s ease forwards;
+    overflow-x: scroll;
 }
 
 @keyframes slideFade {
@@ -66,4 +67,8 @@
       opacity: 1; 
       transform: translateX(0); 
     }
+}
+
+.avatar{
+    max-width: 40px;
 }

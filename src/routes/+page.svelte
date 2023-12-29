@@ -3,6 +3,7 @@
 	import Navbar from '../components/Navbar.svelte'
 	import Simetris from '../components/Simetris.svelte'
 	import { fly } from 'svelte/transition';
+	import 'bootstrap/dist/css/bootstrap.min.css';
 </script>
 
 <section id="home">
