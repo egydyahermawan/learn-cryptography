@@ -20,12 +20,12 @@
 				</li>
 				<li class="nav-item">
                     <a href="#simetris" class="nav-link text-light">
-                        Simetri
+                        Simetris
                     </a>
                 </li>
 				<li class="nav-item">
                     <a href="#asimetris" class="nav-link text-light">
-                        Asimetri
+                        Asimetris
                     </a>
                 </li>
 				<li class="nav-item">
