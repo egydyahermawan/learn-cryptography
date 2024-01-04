@@ -2,9 +2,31 @@
 	import { onMount } from 'svelte'
 	import Navbar from '../components/Navbar.svelte'
 	import Simetris from '../components/Simetris.svelte'
+	import Asimetris from '../components/Asimetris.svelte';
 	import { fly } from 'svelte/transition';
 	import 'bootstrap/dist/css/bootstrap.min.css';
+	import 'bootstrap-icons/font/bootstrap-icons.min.css';
 </script>
+
+<svelte:head>
+	<title>Learn Cryptography</title>
+	<style>
+		.hero {
+			background-image: url('/img/hero-bg.jpg');
+			background-size: cover;
+			height: 100vh;
+		}
+	
+		.b-example-divider {
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+	</style>
+</svelte:head>
 
 <section id="home">
 	<div class="hero d-flex flex-column">
@@ -29,6 +51,10 @@
 <section id="simetris">
 	<Simetris/>
 </section>
+<div class="b-example-divider"></div>
+<section id="asimetris">
+	<Asimetris/>
+</section>
 
 <footer class="py-3">
 	<ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -39,11 +65,3 @@
 	</ul>
 	<p class="text-center text-body-secondary">© 2023 Kelompok 2</p>
 </footer>
-
-<style>
-	.hero {
-		background-image: url('/img/hero-bg.jpg');
-		background-size: cover;
-		height: 100vh;
-	}
-</style>

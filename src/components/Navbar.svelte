@@ -9,7 +9,7 @@
 				href="/"
 				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
 			>
-				<span class="fs-4">Kelompok 2</span>
+				<span class="fs-5 fw-medium me-2">Kelompok 2</span><span class="fs-5 fw-lighter">| Learn Cryptography</span>
 			</a>
 
 			<ul class="nav nav-pills">

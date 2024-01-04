@@ -18,6 +18,9 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-height: 850px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .chat{
@@ -54,7 +57,7 @@
     width: fit-content;
     opacity: 0; 
     animation: slideFade 1s ease forwards;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 @keyframes slideFade {

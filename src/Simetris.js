@@ -4,7 +4,6 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 function toDecimal(arr) {
-    console.log(arr)
     return arr.map((val, i) => {
         if(val == ' '){
             return val
@@ -42,4 +41,20 @@ function encription(plaintext, key, algorithm){
     })
 }
 
-export { toDecimal, generateKey, encription }
+function decription(ciphertext, key, algorithm){
+    return algorithm == 'caesar' ? ciphertext.map((elm) => {
+        if((elm - key) < 0){
+            return elm === ' ' ? ' ' : alphabet.toUpperCase()[26 - Math.abs(elm - key)]
+        } else{
+            return elm === ' ' ? ' ' : alphabet.toUpperCase()[(elm - key) % 26]
+        }
+    }) : ciphertext.map((elm, index) => {
+        if((elm - key[index]) < 0){
+            return elm === ' ' ? ' ' : alphabet.toUpperCase()[26 - Math.abs(elm - key[index])]
+        }else{
+            return elm === ' ' ? ' ' : alphabet.toUpperCase()[(elm - key[index]) % 26]
+        }
+    })
+}
+
+export { toDecimal, generateKey, encription, decription }
