@@ -1,17 +1,16 @@
 <script>
-	import { onMount } from 'svelte'
 	import Navbar from '../components/Navbar.svelte'
 	import Simetris from '../components/Simetris.svelte'
 	import Asimetris from '../components/Asimetris.svelte';
 	import AboutUs from '../components/AboutUs.svelte';
-	import { fly } from 'svelte/transition';
+
 	import 'bootstrap/dist/css/bootstrap.min.css';
 	import 'bootstrap-icons/font/bootstrap-icons.min.css';
 </script>
 
 <svelte:head>
 	<title>Learn Cryptography</title>
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
 	<style>
 		.hero {
 			background-image: url('/img/hero-bg.jpg');
