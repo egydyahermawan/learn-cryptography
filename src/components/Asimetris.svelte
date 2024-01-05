@@ -75,8 +75,8 @@
             sementara kunci publik (y) dihitung dari nilai sebelumnya dan kunci privat. Kunci publik dapat dibagikan untuk verifikasi tanda tangan digital yang dibuat dengan kunci privat yang sesuai.
         </p>
     </div>
-    <div class="row justify-content-center mb-5">
-        <div class="col-sm-10 col-md-4">
+    <div class="row justify-content-center mb-4">
+        <div class="col-sm-12 col-md-4 mb-4">
             <div class="card">
                 <div class="card-header">
                     Generasi Parameter Prima
@@ -119,7 +119,7 @@
             </div>
         </div>
         {#if showState}
-        <div class="col-sm-10 col-md-4" transition:fly={{ x: -250, delay: 500 }}>
+        <div class="col-sm-12 col-md-4 mb-4" transition:fly={{ x: -250, delay: 500 }}>
             <div class="card">
                 <div class="card-header">
                     Menghitung nilai G
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-10 col-md-4" transition:fly={{ x: -250, delay: 1000 }}>
+        <div class="col-sm-12 col-md-4 mb-4" transition:fly={{ x: -250, delay: 1000 }}>
             <div class="card">
                 <div class="card-header">
                     Generate Private & Public Key
@@ -254,7 +254,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center mb-5" transition:fly={{ y: -250, delay: 1000 }}>
+    <div class="row justify-content-center mb-4" transition:fly={{ y: -250, delay: 1000 }}>
         <div class="col-12 col-md-6">
             <div class="card">
                 <div class="card-header">

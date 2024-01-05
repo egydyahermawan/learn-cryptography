@@ -1710,7 +1710,7 @@
 
     {#if chatState}
     <div class="row justify-content-center">
-        <div class="col-6 mb-4" transition:fade={{ duration: 500 }}>
+        <div class="col-12 col-md-6 mb-4" transition:fade={{ duration: 500 }}>
             <div class="card">
                 <div class="card-header">
                     Hasil
