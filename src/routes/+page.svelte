@@ -3,6 +3,7 @@
 	import Navbar from '../components/Navbar.svelte'
 	import Simetris from '../components/Simetris.svelte'
 	import Asimetris from '../components/Asimetris.svelte';
+	import AboutUs from '../components/AboutUs.svelte';
 	import { fly } from 'svelte/transition';
 	import 'bootstrap/dist/css/bootstrap.min.css';
 	import 'bootstrap-icons/font/bootstrap-icons.min.css';
@@ -51,9 +52,17 @@
 <section id="simetris">
 	<Simetris/>
 </section>
+
 <div class="b-example-divider"></div>
+
 <section id="asimetris">
 	<Asimetris/>
+</section>
+
+<div class="b-example-divider"></div>
+
+<section id="about-us">
+	<AboutUs/>
 </section>
 
 <footer class="py-3">

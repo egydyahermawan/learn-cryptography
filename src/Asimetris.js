@@ -65,9 +65,9 @@ const generateK = q => {
     return BigInt(Math.floor(Math.random() * (q - 1)) + 1)
 }
 
-const calculateKInvers = (k, q) => {
+const calculateInvers = (num, q) => {
     let t = BigInt(0), newT = BigInt(1)
-    let r = BigInt(q), newR = BigInt(k)
+    let r = BigInt(q), newR = BigInt(num)
 
     while (newR !== BigInt(0)) {
         let quotient = r / newR;
@@ -94,4 +94,11 @@ const calculateS = (q, x, kInvers, hashed, r) => {
     return BigInt(kInvers) * (BigInt(`0x${hashed}`) + (BigInt(x) * BigInt(r))) % BigInt(q)
 }
 
-export { isPrime, generateP, generatePrimeNumber, calculateG, generateX, generateY, generateK, calculateKInvers, calculateR, calculateS }
+const verifySignature = (p, q, g, y, u1, u2, r) => {
+    let v = (((BigInt(g) ** u1) * (BigInt(y) ** u2)) % BigInt(p)) % BigInt(q)
+    let verified = v === BigInt(r)
+
+    return {v: v, verified: verified}
+}
+
+export { isPrime, generateP, generatePrimeNumber, calculateG, generateX, generateY, generateK, calculateInvers, calculateR, calculateS, verifySignature }
