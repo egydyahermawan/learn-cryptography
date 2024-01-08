@@ -14,6 +14,7 @@ const isPrime = num => {
         if (num % i === 0 || num % (i + 2) === 0) return false;
         i += 6;
     }
+
     return true;
 }
 
@@ -23,10 +24,7 @@ const generatePrimeNumber = bitLength => {
 
     while (true) {
         let qCandidate = Math.floor(Math.random() * (max - min + 1)) + min
-
-        if (isPrime(qCandidate)) {
-            return qCandidate
-        }
+        if (isPrime(qCandidate)) return qCandidate
     }
 }
 
@@ -43,10 +41,7 @@ const generateP = q => {
 const calculateG = (p, q) => {
     for (let h = 2; h < p - 1; h++) {
         let gCandidate = (BigInt(h) ** BigInt((p - 1) / q)) % BigInt(p)
-
-        if (gCandidate > 1n) {
-            return {h: h, g: gCandidate}
-        }
+        if (gCandidate > 1n) return {h: h, g: gCandidate}
     }
 
     return "Tidak ada nilai g yang valid ditemukan"
@@ -57,8 +52,7 @@ const generateX = q => {
 }
 
 const generateY = (p, g, x) => {
-    let y = BigInt(g) ** BigInt(x) % BigInt(p)
-    return y
+    return BigInt(g) ** BigInt(x) % BigInt(p)
 }
 
 const generateK = q => {
@@ -66,8 +60,7 @@ const generateK = q => {
 }
 
 const calculateInvers = (num, q) => {
-    let t = BigInt(0), newT = BigInt(1)
-    let r = BigInt(q), newR = BigInt(num)
+    let t = BigInt(0), newT = BigInt(1), r = BigInt(q), newR = BigInt(num)
 
     while (newR !== BigInt(0)) {
         let quotient = r / newR;
@@ -75,14 +68,8 @@ const calculateInvers = (num, q) => {
         [r, newR] = [newR, r - quotient * newR];
     }
 
-    if (r > BigInt(1)) {
-        throw new Error('Tidak ada invers modular')
-    }
-
-    if (t < BigInt(0)) {
-        t += BigInt(q)
-    }
-
+    if (r > BigInt(1))  throw new Error('Tidak ada invers modular')
+    if (t < BigInt(0)) t += BigInt(q)
     return t
 }
 
@@ -101,4 +88,8 @@ const verifySignature = (p, q, g, y, u1, u2, r) => {
     return {v: v, verified: verified}
 }
 
-export { isPrime, generateP, generatePrimeNumber, calculateG, generateX, generateY, generateK, calculateInvers, calculateR, calculateS, verifySignature }
+export { 
+    isPrime, generateP, generatePrimeNumber, calculateG, 
+    generateX, generateY, generateK, calculateInvers, 
+    calculateR, calculateS, verifySignature 
+}

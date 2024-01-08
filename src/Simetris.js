@@ -21,10 +21,7 @@ function generateKey(keyword, plaintext) {
         if(plaintext[i] === ' '){
             temp.push(' ')
         }else{
-            if(counter >= keyword.length){
-                counter = 0
-            }
-            
+            if(counter >= keyword.length) counter = 0
             temp.push(keyword[counter])
             counter += 1
         }

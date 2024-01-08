@@ -5,13 +5,13 @@
 <div class="position-fixed w-100 bg-dark" style="z-index: 999;">
 	<nav class="navbar navbar-expand-lg">
 		<header class="container d-flex flex-wrap py-3">
-			<a
-				href="/"
-				class="d-flex align-items-center mb-0 me-md-auto link-body-emphasis text-decoration-none"
-			>
+			<a href="/"
+				class="d-flex align-items-center mb-0 me-md-auto link-body-emphasis text-decoration-none">
 				<span class="fs-5 fw-medium me-2">Kelompok 2</span><span class="fs-5 fw-lighter">| Learn Cryptography</span>
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+			aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 

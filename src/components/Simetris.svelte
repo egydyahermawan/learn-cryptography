@@ -1769,28 +1769,20 @@
                         <tbody>
                             <tr>
                                 <td class="text-nowrap">Plaintext</td>
-                                {#each arrPlaintext as p}
-                                    <td align="center" class="text-nowrap">{ p }</td>
-                                {/each}
+                                {#each arrPlaintext as p}<td align="center" class="text-nowrap">{ p }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Urutan</td>
-                                {#each decPlaintext as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decPlaintext as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             {#if selectedAlgorithm == 'vigenere'}
                             <tr>
                                 <td class="text-nowrap">Kunci</td>
-                                {#each generateKey(kunci, plaintext) as k}
-                                    <td align="center" class="text-nowrap">{ k }</td>
-                                {/each}
+                                {#each generateKey(kunci, plaintext) as k}<td align="center" class="text-nowrap">{ k }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Urutan</td>
-                                {#each decKunci as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decKunci as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             {/if}
                             <tr>
@@ -1815,15 +1807,11 @@
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Mod 26</td>
-                                {#each decCiphertext as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decCiphertext as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Ciphertext</td>
-                                {#each arrCiphertext as c}
-                                    <td align="center" class="text-nowrap">{ c }</td>
-                                {/each}
+                                {#each arrCiphertext as c}<td align="center" class="text-nowrap">{ c }</td>{/each}
                             </tr>
                         </tbody>
                     </table>
@@ -1840,28 +1828,20 @@
                         <tbody>
                             <tr>
                                 <td class="text-nowrap">Ciphertext</td>
-                                {#each arrCiphertext as c}
-                                    <td align="center" class="text-nowrap">{ c }</td>
-                                {/each}
+                                {#each arrCiphertext as c}<td align="center" class="text-nowrap">{ c }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Urutan</td>
-                                {#each decCiphertext as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decCiphertext as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             {#if selectedAlgorithm == 'vigenere'}
                             <tr>
                                 <td class="text-nowrap">Kunci</td>
-                                {#each generateKey(kunci, ciphertext) as k}
-                                    <td align="center" class="text-nowrap">{ k }</td>
-                                {/each}
+                                {#each generateKey(kunci, ciphertext) as k}<td align="center" class="text-nowrap">{ k }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Urutan</td>
-                                {#each decKunci as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decKunci as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             {/if}
                             <tr>
@@ -1886,15 +1866,11 @@
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Mod 26</td>
-                                {#each decPlaintext as d}
-                                    <td align="center" class="text-nowrap">{ d }</td>
-                                {/each}
+                                {#each decPlaintext as d}<td align="center" class="text-nowrap">{ d }</td>{/each}
                             </tr>
                             <tr>
                                 <td class="text-nowrap">Plaintext</td>
-                                {#each arrPlaintext as p}
-                                    <td align="center" class="text-nowrap">{ p }</td>
-                                {/each}
+                                {#each arrPlaintext as p}<td align="center" class="text-nowrap">{ p }</td>{/each}
                             </tr>
                         </tbody>
                     </table>

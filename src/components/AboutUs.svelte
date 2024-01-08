@@ -1,12 +1,5 @@
-<script>
-
-</script>
-
 <div class="container py-5">
-    <div class="p-3 pb-md-4 mx-auto text-center">
-        <h1 class="fs-2 fw-normal text-body-emphasis mt-3">About Us</h1>
-    </div>
-
+    <div class="p-3 pb-md-4 mx-auto text-center"><h1 class="fs-2 fw-normal text-body-emphasis mt-3">About Us</h1></div>
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div class="col-lg-12 px-0">
         <h1 class="display-4 fst-italic">Learn Cryptography</h1>
@@ -17,7 +10,6 @@
         </p>
       </div>
     </div>
-  
     <div class="row mb-2">
         <div class="col-md-4">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm" style="min-height: 200px;">
@@ -56,10 +48,7 @@
             </div>
         </div>
     </div>
-
-    <h3 class="pb-4 mb-4 fst-italic border-bottom mt-5">
-        Terima Kasih
-    </h3>
+    <h3 class="pb-4 mb-4 fst-italic border-bottom mt-5">Terima Kasih</h3>
     <p>
         Dengan penuh rasa terima kasih, kami ingin mengucapkan apresiasi yang mendalam kepada Ibu Mona Elviyenti atas bimbingan, pengajaran, dan ilmu yang telah diberikan selama mata kuliah 
         Keamanan Data di semester 7. Bimbingan Ibu telah memberikan landasan yang kuat bagi pemahaman kami tentang keamanan data, dan kami sangat menghargai dedikasi serta semangat Ibu dalam 
